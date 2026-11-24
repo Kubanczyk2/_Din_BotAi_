@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090909"><meta name="description" content="DIN_BOT AI — FURIA"><link rel="manifest" href="./manifest.webmanifest"><script src="https://js.puter.com/v2/"></script><link rel="stylesheet" href="./style.css"><title>DIN_BOT AI — FURIA</title>
+</head>
+<body>
+<div id="modeChooser" class="chooser-backdrop">
+  <section class="chooser" role="dialog" aria-modal="true" aria-labelledby="chooserTitle">
+    <div class="big-logo">F</div><p class="eyebrow">DIN_BOT AI</p>
+    <h1 id="chooserTitle">Jak chcesz uruchomić <span>FURIĘ</span>?</h1>
+    <p class="chooser-desc">Wybierz sposób rozmowy. W każdej chwili możesz przełączyć tryb w panelu.</p>
+    <button id="chooseOnline" class="choose-card"><strong>ONLINE</strong><small>AI w chmurze • wymaga internetu i logowania do Puter</small></button>
+    <button id="chooseOffline" class="choose-card"><strong>OFFLINE</strong><small>Model lokalny • pierwsze pobranie wymaga internetu</small></button>
+    <p class="chooser-note">Tryb ONLINE korzysta z usługi zewnętrznej. Dostępność i ewentualne opłaty zależą od konta/usługi. Nie wpisuj prywatnych danych.</p>
+  </section>
+</div>
+<div class="app"><aside class="sidebar"><div class="brand"><div class="logo">F</div><div><b>DIN_BOT AI</b><small>FURIA</small></div></div><button id="newChat" class="new">＋ Nowa rozmowa</button><div class="side-label">TRYB PRACY</div><div class="mode"><button class="mode-btn active" data-mode="online">ONLINE</button><button class="mode-btn" data-mode="offline">OFFLINE</button></div><p id="modeInfo" class="muted">Połączenie z modelem w chmurze.</p><button id="loadModel" class="outline">Pobierz model offline</button><div id="progress" class="progress"></div><div class="side-label">ROZMOWY</div><div id="history" class="history"></div><div class="foot">Wersja testowa • FURIA</div></aside>
+<main><header><div><span class="status-dot"></span><b id="status">GOTOWA DO ROZMOWY</b></div><button id="clear" class="clear">Wyczyść czat</button></header><section id="messages" class="messages"><div class="welcome"><div class="big-logo">F</div><h1>Witaj. Jestem <span>FURIA</span>.</h1><p>Twój asystent DIN_BOT AI. Napisz, w czym mogę pomóc.</p><div class="hint">Wybierz ONLINE albo pobierz model, aby korzystać OFFLINE.</div></div></section><form id="chatForm" class="composer"><textarea id="prompt" rows="1" placeholder="Napisz wiadomość..." required></textarea><button id="send" type="submit">➤</button></form><div class="disclaimer">AI może się mylić. Nie wpisuj haseł ani prywatnych danych.</div></main></div>
+<script type="module" src="./app.js"></script>
+</body></html>
